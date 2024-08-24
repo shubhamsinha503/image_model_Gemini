@@ -37,7 +37,7 @@ if submit and api_key and image is not None:
     st.write(response)
 
 # Function to load Gemini AI model and get the reponse
-def get_gemini_response(input_text, image)
+def get_gemini_response(input_text, image):
     model = genai.GenerativeModel("gemini_pro_vision")
     if input_text != "":
         response = model.generate_content([input_text, image])
